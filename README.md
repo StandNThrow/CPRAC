@@ -1,2 +1,4 @@
 # CPRAC
 Hold project files for SP FYP
+
+<blockquote>This project report aims to cover our group's experiences when working on our Final Year Project, an iPhone application which offers car rental services, and provide details about the project. In this project, we are helping a car rental company, C&P Rent-a-Car, to develop an iPhone application to provide convenience for their customers. The application will allow their customers to rent a car anytime and anywhere as long as they have their iPhone with them. With this application, the company is able to keep up with their competitors and remain competitive in their market.</blockquote>
