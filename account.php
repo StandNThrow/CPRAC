@@ -3,13 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title></title>
-<script src="//code.jquery.com/jquery-1.11.2.min.js"></script> 
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
 <?php $xml = simplexml_load_file('data.xml'); ?>
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <link rel="stylesheet" href="css/jquery.ui.datepicker.mobile.css">
 <link rel="stylesheet" href="css/style.css" type="text/css">
+<title>C&amp;P Rent A Car | Account</title>
 </head>
 <body>
 <?php
@@ -48,7 +46,7 @@ $myhireno			=	$result["phone_number"];
     <br>
     <br>
     <span id="logoutMessageBox" style="display:none;"></span>
-    <input name="Submit" type="submit" id="submit" data-theme="a" value="Logout">
+    <input name="Submit" type="submit"  data-theme="a" value="Logout">
   </form>
   <div data-role="footer" data-position="fixed" class="nav-glyphish" data-theme="a">
     <div data-role="navbar" class="nav-glyphish">
@@ -70,25 +68,25 @@ $myhireno			=	$result["phone_number"];
           <br>
           Name: Joanne CHONG <br>
           Email: <a href="mailto:joanne@candp.com">joanne@candp.com</a> <br>
-          Tel: <a href="tel:6349 5284">6349 5284</a> </p>
+          Tel: <a href="tel:63495284">6349 5284</a> </p>
       </li>
       <li>
         <h1>CEO</h1>
         <p> Name: LOI Win Yen <br>
           Email: <a href="mailto:winyen@candp.com">winyen@candp.com</a> <br>
-          Tel: <a href="tel:9666 4666">9666 4666</a> </p>
+          Tel: <a href="tel:96664666">9666 4666</a> </p>
       </li>
       <li>
         <h1>Secretary</h1>
         <p> Name: Kitty LIM <br>
           Email: <a href="mailto:kittylim@candp.com">kittylim@candp.com</a> <br>
-          Tel: <a href="tel:6349 3839">6349 3839</a> </p>
+          Tel: <a href="tel:63493839">6349 3839</a> </p>
       </li>
       <li>
         <h1>Marketing Manager</h1>
         <p> Name: Jeanne PHUA <br>
           Email: <a href="mailto:jeanne.phua@candp.com">jeanne.phua@candp.com</a> <br>
-          Tel: <a href="tel:6349 5283">6349 5283</a> Mobile: <a href="tel:9116 6656">9116 6656</a> </p>
+          Tel: <a href="tel:63495283">6349 5283</a> Mobile: <a href="tel:91166656">9116 6656</a> </p>
       </li>
     </ul>
   </div>
@@ -114,10 +112,10 @@ $myhireno			=	$result["phone_number"];
     <h1>View Bookings</h1>
   </div>
   <div data-role="content" class="ui-content" role="main">
-    <h4>Please Call: <a href="tel:6736 6666">6736 6666</a> if you have any enquires regarding your booking records. Please quote your Booking Ref ID during the call.</h4>
+    <h4>Please Call: <a href="tel:67366666">6736 6666</a> if you have any enquires regarding your booking records. Please quote your Booking Ref ID during the call.</h4>
     <h4 style="color:red;">* This page is best viewed in Landscape Mode.</h4>
     <h4>Self Drive</h4>
-    <table cellspacing="0" cellpadding="0" width="100%" border="1">
+    <table>
       <tr>
         <th>Ref id</th>
         <th>Car Model</th>
@@ -153,7 +151,7 @@ for ($i=0; $i < mysql_num_rows($SDsql); $i++)
     </table>
     <br>
     <h4>Chauffeur Drive</h4>
-    <table cellspacing="0" cellpadding="0" width="100%" border="1">
+    <table>
       <tr>
         <th>Ref id</th>
         <th>Car Model</th>
@@ -201,7 +199,7 @@ for ($j=0; $j < mysql_num_rows($CDsql); $j++)
     <h1>Change Password</h1>
   </div>
   <div data-role="content" class="ui-content" role="main">
-    <form id="changePassword_form" name="changePassword" action="" method="post">
+    <form id="changePassword_form" name="changePassword"  method="post">
       <div data-role="fieldcontain">
         <label for="currentPassword">Current Password</label>
         <input type="password" name="currentPassword" id="currentPassword">
@@ -218,7 +216,7 @@ for ($j=0; $j < mysql_num_rows($CDsql); $j++)
       <br>
       <span id="changePasswordMessageBox" style="display:none;"></span> <br>
       <br>
-      <input name="Submit" type="submit" id="submit" data-theme="a" value="Submit">
+      <input name="Submit" type="submit"  data-theme="a" value="Submit">
     </form>
   </div>
   <div data-role="footer" data-position="fixed" data-theme="a">
@@ -231,10 +229,10 @@ for ($j=0; $j < mysql_num_rows($CDsql); $j++)
   </div>
   <div data-role="content" class="ui-content" role="main">
     <h4 style="color:red;">WARNING! Changing your email will change the email you used for login.</h4>
-    <form id="changeEmail_form" name="changeEmail" action="" method="post">
+    <form id="changeEmail_form" name="changeEmail" method="post">
       <div data-role="fieldcontain">
         <label for="currentEmail">Current Email</label>
-        <input type="text" name="currentEmail" id="currentEmail" value="<?php echo $myloggedEmail; ?>" readonly="readonly">
+        <input type="text" name="currentEmail" id="currentEmail" value="<?php echo $myloggedEmail; ?>" readonly>
       </div>
       <div data-role="fieldcontain">
         <label for="newEmail">New Email</label>
@@ -248,7 +246,7 @@ for ($j=0; $j < mysql_num_rows($CDsql); $j++)
       <br>
       <span id="messageBox" style="display:none;"></span> <br>
       <br>
-      <input name="Submit" type="submit" id="submit" data-theme="a" value="Submit">
+      <input name="Submit" type="submit"  data-theme="a" value="Submit">
     </form>
   </div>
   <div data-role="footer" data-position="fixed" data-theme="a">
@@ -259,7 +257,7 @@ for ($j=0; $j < mysql_num_rows($CDsql); $j++)
   <div data-role="header" data-position="inline" data-theme="a">
     <h1>Booking</h1>
   </div>
-  <img src="appleIcon.png" width="90px" height="90px" style="margin:10px;">
+  <img src="appleIcon.png" alt="favicon" width="90" height="90" style="margin:10px;">
   <div data-role="content" class="ui-content" role="main">
     <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="a">
       <li data-role="list-divider">Booking Services</li>
@@ -276,52 +274,50 @@ for ($j=0; $j < mysql_num_rows($CDsql); $j++)
     <h1>Self-Drive</h1>
   </div>
   <div data-role="content" class="ui-content" role="main">
-    <form id="selfDrive_form" name="selfDrive" action="" method="post">
+    <form id="selfDrive_form" name="selfDrive" method="post">
       <div data-role="fieldcontain">
         <label for="SDhirename">Hire Name</label>
-        <input type="text" name="SDhirename" id="SDhirename" value="<?php echo $myhirename; ?>" readonly="readonly">
+        <input type="text" name="SDhirename" id="SDhirename" value="<?php echo $myhirename; ?>" readonly>
       </div>
       <div data-role="fieldcontain">
         <label for="SDhireno">Hire Contact</label>
-        <input type="text" name="SDhireno" id="SDhireno" value="<?php echo $myhireno; ?>" readonly="readonly">
+        <input type="text" name="SDhireno" id="SDhireno" value="<?php echo $myhireno; ?>" readonly>
       </div>
       <div data-role="fieldcontain">
         <label for="SDvmodel">Vehicle Model</label>
-        <select name="SDvmodel" id="SDvmodel" data-native-menu="false" />
-        
-        <?php
+        <select name="SDvmodel" id="SDvmodel" data-native-menu="false">
+          <?php
 					$getVehiclemodel = $xml->xpath('/entry/car/model');
 					foreach ($getVehiclemodel as $vehiclemodel)
 					{
 						?>
-        <option value="<?php echo $vehiclemodel; ?>"><?php echo $vehiclemodel; ?></option>
-        <?php
+          <option value="<?php echo $vehiclemodel; ?>"><?php echo $vehiclemodel; ?></option>
+          <?php
 					}
 					?>
         </select>
       </div>
       <div data-role="fieldcontain">
         <label for="SDquantity">Quantity</label>
-        <select name="SDquantity" id="SDquantity" data-native-menu="false" />
-        
-        <?php for($i=1; $i<=10; $i++) { ?>
-        <option value="<?=$i?>">
-        <?=$i?>
-        </option>
-        <?php } ?>
+        <select name="SDquantity" id="SDquantity" data-native-menu="false">
+          <?php for($i=1; $i<=10; $i++) { ?>
+          <option value="<?=$i?>">
+          <?=$i?>
+          </option>
+          <?php } ?>
         </select>
       </div>
       <div data-role="fieldcontain">
         <label for="SDstartdate">Start Date</label>
-        <input type="date" name="SDstartdate" id="SDstartdate" readonly="readonly">
+        <input type="date" name="SDstartdate" id="SDstartdate">
       </div>
       <div data-role="fieldcontain">
         <label for="SDenddate">End Date</label>
-        <input type="date" name="SDenddate" id="SDenddate" readonly="readonly">
+        <input type="date" name="SDenddate" id="SDenddate">
       </div>
       <div data-role="fieldcontain">
         <label for="SDpickuplocation">Pickup Location</label>
-        <input type="text" name="SDpickuplocation" id="SDpickuplocation" value="No 41 Pandan Road" disabled="disabled">
+        <input type="text" name="SDpickuplocation" id="SDpickuplocation" value="No 41 Pandan Road" readonly disabled>
         <br>
         <span style="color:red;">* Please take note that this is a fixed pickup point for Self-Drive</span> </div>
       <div data-role="fieldcontain">
@@ -339,7 +335,7 @@ for ($j=0; $j < mysql_num_rows($CDsql); $j++)
       <br>
       <span id="SDmessageBox" style="display:none;"></span> <br>
       <br>
-      <input name="Submit" id="submit" type="submit" data-theme="a" value="Book">
+      <input name="Submit"  type="submit" data-theme="a" value="Book">
     </form>
   </div>
   <div data-role="footer" data-position="fixed" data-theme="a">
@@ -351,14 +347,14 @@ for ($j=0; $j < mysql_num_rows($CDsql); $j++)
     <h1>Chauffeur Drive</h1>
   </div>
   <div data-role="content" class="ui-content" role="main">
-    <form id="chauffeurDrive_form" name="chauffeurDrive" action="" method="post">
+    <form id="chauffeurDrive_form" name="chauffeurDrive" method="post">
       <div data-role="fieldcontain">
         <label for="CDhirename">Passenger Name</label>
-        <input type="text" name="CDhirename" id="CDhirename" value="<?php echo $myhirename; ?>" readonly="readonly">
+        <input type="text" name="CDhirename" id="CDhirename" value="<?php echo $myhirename; ?>" readonly>
       </div>
       <div data-role="fieldcontain">
         <label for="CDhireno">Passenger Contact</label>
-        <input type="tel" name="CDhireno" id="CDhireno" value="<?php echo $myhireno; ?>" readonly="readonly">
+        <input type="tel" name="CDhireno" id="CDhireno" value="<?php echo $myhireno; ?>" readonly>
       </div>
       <div data-role="fieldcontain">
         <label for="CDcarmodel">Make &amp; Model of Car</label>
@@ -394,7 +390,7 @@ for ($j=0; $j < mysql_num_rows($CDsql); $j++)
       </div>
       <div data-role="fieldcontain">
         <label for="CDpickupdate">Pickup Date</label>
-        <input type="date" name="CDpickupdate" id="CDpickupdate" readonly="readonly">
+        <input type="date" name="CDpickupdate" id="CDpickupdate">
       </div>
       <div data-role="fieldcontain">
         <label for="CDpickuptime">Pickup Time</label>
@@ -411,13 +407,15 @@ for ($j=0; $j < mysql_num_rows($CDsql); $j++)
       <br>
       <span id="CDmessageBox" style="display:none;"></span> <br>
       <br>
-      <input name="Submit" type="submit" id="submit" data-theme="a" value="Book">
+      <input name="Submit" type="submit"  data-theme="a" value="Book">
     </form>
   </div>
   <div data-role="footer" data-position="fixed" data-theme="a">
     <h4>&nbsp;</h4>
   </div>
 </div>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script> 
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
 <script src="js/changeEmail.js"></script> 
 <script src="js/changePassword.js"></script> 
 <script src="js/chauffeurDrive.js"></script> 
