@@ -1,0 +1,80 @@
+.msgBox {
+	position: absolute;
+	width: auto;
+	/*border:1px solid #c93;
+	background:#ffc;*/
+	font-weight: bold;
+	color: #000000;
+}
+.validMsg {
+	position: absolute;
+	width: auto;
+	/*border:1px solid #349534;
+	background:#C9FFCA;*/
+	font-weight: bold;
+	color: #008000;
+}
+.errorMsg {
+	position: absolute;
+	width: auto;
+	/*border:1px solid #CC0000;
+	background:#F7CBCA;*/
+	font-weight: bold;
+	color: #CC0000;
+}
+td {
+	padding: 3px;
+}
+.nav-glyphish .ui-btn .ui-btn-inner {
+	padding-top: 40px !important;
+}
+.nav-glyphish .ui-btn .ui-icon {
+	width: 30px!important;
+	height: 30px!important;
+	margin-left: -15px !important;
+	box-shadow: none!important;
+	-moz-box-shadow: none!important;
+	-webkit-box-shadow: none!important;
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+}
+#chat .ui-icon {
+	background: url(icons/09-chat2.png) 50% 50% no-repeat;
+	background-size: 24px 22px;
+}
+#email .ui-icon {
+	background: url(icons/18-envelope.png) 50% 50% no-repeat;
+	background-size: 24px 16px;
+}
+#login .ui-icon {
+	background: url(icons/30-key.png) 50% 50% no-repeat;
+	background-size: 12px 26px;
+}
+#beer .ui-icon {
+	background: url(icons/88-beermug.png) 50% 50% no-repeat;
+	background-size: 22px 27px;
+}
+#coffee .ui-icon {
+	background: url(icons/100-coffee.png) 50% 50% no-repeat;
+	background-size: 20px 24px;
+}
+#skull .ui-icon {
+	background: url(icons/21-skull.png) 50% 50% no-repeat;
+	background-size: 22px 24px;
+}
+#phone .ui-icon {
+	background: url(icons/75-phone.png) 50% 50% no-repeat;
+	background-size: 24px 24px;
+}
+#aboutme .ui-icon {
+	background: url(icons/123-id-card.png) 50% 50% no-repeat;
+	background-size: 24px 17px;
+}
+#pricetag .ui-icon {
+	background: url(icons/172-pricetag.png) 50% 50% no-repeat;
+	background-size: 28px 23px;
+}
+#refresh .ui-icon {
+	background: url(icons/01-refresh.png) 50% 50% no-repeat;
+	background-size: 24px 26px;
+}

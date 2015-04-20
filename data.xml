@@ -1,0 +1,312 @@
+<?xml version= "1.0" encoding="UTF-8" ?>
+<entry>
+	<car>
+		<drive>Self drive <br/></drive>
+		<type>Saloon<br/></type>
+		<model>Toyota Prius Hybrid 1.5A<br/></model>
+		<img>images/car1.jpg</img>
+		<description>Engine Capacity: 1497cc Transmission: Automatic Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon<br/></description>
+	</car>
+	<p/>
+		<car>
+			<drive>Self drive <br/></drive>
+			<type>Saloon<br/></type>
+			<model>Honda Jazz 1.4A<br/></model>
+			<img>images/car2.jpg</img>
+			<description>Engine Capacity: 1,339cc Transmission: Automatic Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon<br/></description>
+	</car>
+	<p/>
+		<car>
+			<drive>Self drive <br/></drive>
+			<type>Saloon<br/></type>
+			<model>Suzuki Swift 1.5A<br/></model>
+			<img>images/car3.jpg</img>
+			<description>Engine Capacity: 1,490cc Transmission: Automatic Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon <br/></description>
+	</car>
+	<p/>
+		<car>
+			<drive>Self drive <br/></drive>
+			<type>Saloon<br/></type>
+			<model>Toyota Vios 1.5A<br/></model>
+			<img>images/car4.jpg</img>
+			<description>Engine Capacity: 1490 cc Transmission: Automatic Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon <br/></description>
+	</car>
+	<p/>		<car>
+			<drive>Self drive <br/></drive>
+			<type>Saloon<br/></type>
+			<model>Honda Civic 1.6A<br/></model>
+			<img>images/car5.jpg</img>
+			<description>Engine Capacity: 1,595 cc Transmission: Automatic Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon<br/></description>
+	</car>
+	<p/>
+			<car>
+			<drive>Self drive <br/></drive>
+			<type>Saloon<br/></type>
+			<model>Mitsubishi Lancer<br/></model>
+			<img>images/car6.jpg</img>
+			<description>Engine Capacity: 1,500 cc Transmission: Automatic Color: Red,Black,Gray <br/></description>
+	</car>
+	<p/>
+			<car>
+			<drive>Self drive <br/></drive>
+			<type>Saloon<br/></type>
+			<model>Toyota Corolla Altis 1.6A<br/></model>
+			<img>images/car7.jpg</img>
+			<description>Engine Capacity: 1,598 cc Transmission: Automatic Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon<br/></description>
+	</car>
+	<p/>
+			<car>
+			<drive>Self drive <br/></drive>
+			<type>Saloon<br/></type>
+			<model>Toyota Camry 2.0A<br/></model>
+			<img>images/car8.jpg</img>
+			<description>Engine Capacity: 1,998 cc Transmission: Automatic Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon <br/></description>
+	</car>
+	<p/>
+	<car>
+			<drive>Self drive <br/></drive>
+			<type>Saloon<br/></type>
+			<model>BMW 320i 2.0A<br/></model>
+			<img>images/car9.jpg</img>
+			<description>Engine Capacity: 1,995 cc Transmission: Automatic Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon <br/></description>
+	</car>
+	<p/>
+	<car>
+			<drive>Self drive <br/></drive>
+			<type>Saloon<br/></type>
+			<model>MB E200 1.8A<br/></model>
+			<img>images/car10.jpg</img>
+			<description>Engine Capacity: 1,800 cc Transmission: Automatic Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon <br/></description>
+	</car>
+	<p/>
+	<car>
+			<drive>Self drive <br/></drive>
+			<type>MPV<br/></type>
+			<model>Toyota Picnic 2.0A<br/></model>
+			<img>images/car11.jpg</img>
+			<description>ngine Capacity : 1,998 cc Transmission: Automatic Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon<br/></description>
+	</car>
+	<p/>
+		<car>
+			<drive>Self drive <br/></drive>
+			<type>MPV<br/></type>
+			<model>Mitsubishi Grandis 2.4A<br/></model>
+			<img>images/car12.jpg</img>
+			<description> Engine Capacity: 2,400 cc Transmission: Automatic Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon<br/></description>
+	</car>
+	<p/>
+	<car>
+			<drive>Self drive <br/></drive>
+			<type>MPV<br/></type>
+			<model>Toyota Estima Aeras 2.4A<br/></model>
+			<img>images/car13.jpg</img>
+			<description>Engine Capacity: 2,362 cc Transmission: Automatic Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon <br/></description>
+	</car>
+	<p/>
+	<car>
+			<drive>Self drive <br/></drive>
+			<type>MPV<br/></type>
+			<model>Honda Odyssey 2.4A<br/></model>
+			<img>images/car14.jpg</img>
+			<description>Engine Capacity: 2,400 cc Transmission: Automatic Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon <br/></description>
+	</car>
+	<p/>
+	<car>
+			<drive>Self drive <br/></drive>
+			<type>MPV<br/></type>
+			<model>Toyota Alphard 2.4A<br/></model>
+			<img>images/car15.jpg</img>
+			<description>Engine Capacity: 2400 cc Transmission: Automatic Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon <br/></description>
+	</car>
+	<p/>	
+		<car>
+			<drive>Self drive <br/></drive>
+			<type>SUV<br/></type>
+			<model>Honda CRV 2.0A<br/></model>
+			<img>images/car16.jpg</img>
+			<description>Engine Capacity: 1,997 cc Transmission: Automatic Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon <br/></description>
+	</car>
+	<p/>	
+			<car>
+			<drive>Self drive <br/></drive>
+			<type>SUV<br/></type>
+			<model>Toyota Fortuner 2.7A<br/></model>
+			<img>images/car17.jpg</img>
+			<description>Engine Capacity: 2,700 cc Transmission: Automatic Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon <br/></description>
+	</car>
+	<p/>
+		<car>
+			<drive>Self drive <br/></drive>
+			<type>SUV<br/></type>
+			<model>Toyota Harrier 2.4A<br/></model>
+			<img>images/car18.jpg</img>
+			<description>Engine Capacity: 2,400 cc Transmission: Automatic Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon <br/></description>
+	</car>
+	<p/>
+		<car>
+			<drive>Self drive <br/></drive>
+			<type>SUV<br/></type>
+			<model>Volvo XC90 2.5A<br/></model>
+			<img>images/car19.jpg</img>
+			<description>Engine Capacity: 2,500 cc Transmission: Automatic Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon<br/></description>
+	</car>
+	<p/>
+		<car>
+			<drive>Self drive <br/></drive>
+			<type>Commercial<br/></type>
+			<model>Toyota Liteace 5Dr<br/></model>
+			<img>images/car20.jpg</img>
+			<description>Engine Capacity: 2,184 cc Transmission: Manual Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon <br/></description>
+	</car>
+	<p/>
+		<car>
+			<drive>Self drive <br/></drive>
+			<type>Commercial<br/></type>
+			<model>Mitsubishi L200 Single Cab<br/></model>
+			<img>images/car21.jpg</img>
+			<description>Engine Capacity: 2477cc Transmission: Manual <br/></description>
+	</car>
+	<p/>	
+			<car>
+			<drive>Self drive <br/></drive>
+			<type>Commercial<br/></type>
+			<model>Toyota Hilux Single Cab<br/></model>
+			<img>images/car22.jpg</img>
+			<description>Engine Capacity: 2982cc Transmission: Manual <br/></description>
+	</car>
+	<p/>
+		<car>
+			<drive>Self drive <br/></drive>
+			<type>Commercial<br/></type>
+			<model>MB Vito<br/></model>
+			<img>images/car23.jpg</img>
+			<description>Engine Capacity: 2,148 cc Transmission: Automatic Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon <br/></description>
+	</car>
+	<p/>
+		<car>
+			<drive>Self drive <br/></drive>
+			<type>Commercial<br/></type>
+			<model>Nissan NV200<br/></model>
+			<img>images/car24.jpg</img>
+			<description>Engine Capacity: 1461cc Transmission: Manual <br/></description>
+	</car>
+	<p/>
+		<car>
+			<drive>Self drive <br/></drive>
+			<type>Commercial<br/></type>
+			<model>Toyota Hilux Double Cab<br/></model>
+			<img>images/car25.jpg</img>
+			<description>Engine Capacity: 2982 Transmission: Manual <br/></description>
+	</car>
+	<p/>
+		<car>
+			<drive>Self drive <br/></drive>
+			<type>Commercial<br/></type>
+			<model>MB 140D (13S)<br/></model>
+			<img>images/car26.jpg</img>
+			<description>Engine Capacity: 2,874 CC Transmission: Manual <br/></description>
+	</car>
+	<p/>
+		<car>
+			<drive>Self drive <br/></drive>
+			<type>Commercial<br/></type>
+			<model>Mitsubishi L200 Double Cab<br/></model>
+			<img>images/car27.jpg</img>
+			<description>Engine Capacity: 2500cc Transmission: Manual <br/></description>
+	</car>
+	<p/>
+		<car>
+			<drive>Self drive <br/></drive>
+			<type>Commercial<br/></type>
+			<model>Toyota Hiace Low Roof (11S)<br/></model>
+			<img>images/car28.jpg</img>
+			<description>Engine Capacity: 2694 cc Transmission: Automatic/Manual <br/></description>
+	</car>
+	<p/>
+		<car>
+			<drive>Self drive <br/></drive>
+			<type>Commercial<br/></type>
+			<model>MB Vito 11SE (09S)<br/></model>
+			<img>images/car29.jpg</img>
+			<description>Engine Capacity: 2151cc Transmission: Manual <br/></description>
+	</car>
+	<p/>
+		<car>
+			<drive>Chauffeur drive <br/></drive>
+			<model>Toyota Camry (4S)<br/></model>
+			<img>images/car30.jpg</img>
+			<description>Engine Capacity: 2362cc Transmission: Automatic<br/></description>
+	</car>
+	<p/>
+		<car>
+			<drive>Chauffeur drive <br/></drive>
+			<model>MB E Class (4S)<br/></model>
+			<img>images/car31.jpg</img>
+			<description>Engine Capacity: 3190cc Transmission: Automatic<br/></description>
+	</car>
+	<p/>
+		<car>
+			<drive>Chauffeur drive <br/></drive>
+			<model>MB S Class (4S)<br/></model>
+			<img>images/car32.jpg</img>
+			<description>Engine Capacity: 3498cc Transmission: Automatic <br/></description>
+	</car>
+	<p/>	
+		<car>
+			<drive>Chauffeur drive <br/></drive>
+			<model>Bentley Flying Spur (4S)<br/></model>
+			<img>images/car33.jpg</img>
+			<description>Engine Capacity: 5998cc Transmission: Automatic <br/></description>
+	</car>
+	<p/>
+		<car>
+			<drive>Chauffeur drive <br/></drive>
+			<model>Toyota Estima (7S)<br/></model>
+			<img>images/car34.jpg</img>
+			<description>Engine Capacity: 2362cc Transmission: Automatic <br/></description>
+	</car>
+	<p/>
+			<car>
+			<drive>Chauffeur drive <br/></drive>
+			<model>Toyota Alphard (7S)<br/></model>
+			<img>images/car35.jpg</img>
+			<description>Car description:Engine Capacity: 2362cc Transmission: Automatic <br/></description>
+	</car>
+	<p/>
+				<car>
+			<drive>Chauffeur drive <br/></drive>
+			<model>Toyota Hiace (13S)<br/></model>
+			<img>images/car36.jpg</img>
+			<description>Engine Capacity: 2,494 cc Transmission: Manual Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon <br/></description>
+	</car>
+	<p/>
+				<car>
+			<drive>Chauffeur drive <br/></drive>
+			<model>Toyota Coaster (19S)<br/></model>
+			<img>images/car37.jpg</img>
+			<description>Engine Capacity: 4,009 cc Transmission: Manual Color: Black, White, Red, Blue, Gray, Orange, Green, Maroon<br/></description>
+	</car>
+	<p/>
+				<car>
+			<drive>Chauffeur drive <br/></drive>
+			<model>Coach (44S)<br/></model>
+			<img>images/car38.jpg</img>
+			<description>Engine Capacity: 2,399 cc Transmission: Automatic <br/></description>
+	</car>
+	<p/>
+				<car>
+			<drive>Chauffeur drive <br/></drive>
+			<model>MB Vito 11SE (9S)<br/></model>
+			<img>images/car39.jpg</img>
+			<description>Engine Capacity: 2151cc Transmission: Manual  <br/></description>
+	</car>
+	<p/>
+				<car>
+			<drive>Chauffeur drive <br/></drive>
+			<model>Toyota Liteace 5Dr<br/></model>
+			<img>images/car40.jpg</img>
+			<description>Engine Capacity: 2184cc Transmission: Manual <br/></description>
+	</car>
+	<p/>
+	
+</entry>
