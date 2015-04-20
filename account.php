@@ -1,50 +1,16 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title></title>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script> 
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
 <?php $xml = simplexml_load_file('data.xml'); ?>
-<link rel="stylesheet" href="jquery.mobile-1.0rc1.min.css" type="text/css" />
-<link rel="stylesheet" href="jquery.ui.datepicker.mobile.css" />
-<link rel="stylesheet" href="style.css" type="text/css" />
-<script src="jquery-1.6.2.min.js"></script>
-<script src="jquery.mobile-1.0a4.1.min.js"></script>
-<script src="changeEmail.js"></script>
-<script src="changePassword.js"></script>
-<script src="chauffeurDrive.js"></script>
-<script src="login.js"></script>
-<script src="register.js"></script>
-<script src="register_action.js"></script>
-<script src="resetPassword.js"></script>
-<script src="selfDrive.js"></script>
-<script src="viewCars.js"></script>
-<script src="jQuery.ui.datepicker.js"></script>
-<script src="jquery.ui.datepicker.mobile.js"></script>
-<script>
-  $(document).bind( "mobileinit", function(){
-    $.mobile.page.prototype.options.degradeInputs.date = true;
-  });
-  
-$("a[data-role=tab]").each(function () {
-    var anchor = $(this);
-    anchor.bind("click", function () {
-        $.mobile.changePage(anchor.attr("href"), {
-            transition: "none",
-            changeHash: false
-        });
-        return false;
-    });
-});
-
-$("div[data-role=page]").bind("pagebeforeshow", function (e, data) {
-    $.mobile.silentScroll(0);
-});​
-</script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="css/jquery.ui.datepicker.mobile.css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-
 <body>
 <?php
 include ('db_config.php');
@@ -58,7 +24,7 @@ $myhirename			=	$result["name"];
 $myhireno			=	$result["phone_number"];
 ?>
 <div data-role="page" id="account">
-  <div data-role="header" data-position="fixed" data-backbtn="false" data-theme="e">
+  <div data-role="header" data-position="fixed" data-backbtn="false" data-theme="">
     <h1>Account Info</h1>
   </div>
   <div data-role="content" class="ui-content" role="main">
@@ -79,12 +45,12 @@ $myhireno			=	$result["phone_number"];
     </ul>
   </div>
   <form id="logout" name="logout" data-ajax="false" action="logout.php" method="post">
-    <br />
-    <br />
+    <br>
+    <br>
     <span id="logoutMessageBox" style="display:none;"></span>
-    <input name="Submit" type="submit" id="submit" data-theme="a" value="Logout" />
+    <input name="Submit" type="submit" id="submit" data-theme="a" value="Logout">
   </form>
-  <div data-role="footer" data-position="fixed" class="nav-glyphish" data-theme="e">
+  <div data-role="footer" data-position="fixed" class="nav-glyphish" data-theme="a">
     <div data-role="navbar" class="nav-glyphish">
       <ul>
         <li><a href="#contact" id="phone" data-icon="custom">Contact</a></li>
@@ -93,7 +59,7 @@ $myhireno			=	$result["phone_number"];
   </div>
 </div>
 <div data-role="page" id="contact">
-  <div data-role="header" data-position="fixed" data-theme="e">
+  <div data-role="header" data-position="fixed" data-theme="a">
     <h1>Contact Us</h1>
   </div>
   <div data-role="content" class="ui-content" role="main">
@@ -126,12 +92,12 @@ $myhireno			=	$result["phone_number"];
       </li>
     </ul>
   </div>
-  <div data-role="footer" data-position="fixed" data-theme="e">
+  <div data-role="footer" data-position="fixed" data-theme="a">
     <h4>&nbsp;</h4>
   </div>
 </div>
 <div data-role="page" id="viewCars">
-  <div data-role="header" data-position="fixed" data-theme="e">
+  <div data-role="header" data-position="fixed" data-theme="a">
     <h1>View Fleets</h1>
   </div>
   <div data-role="content" class="ui-content" role="main">
@@ -139,12 +105,12 @@ $myhireno			=	$result["phone_number"];
       <li data-role="list-divider">Fleets</li>
     </ul>
   </div>
-  <div data-role="footer" data-position="fixed" data-theme="e">
+  <div data-role="footer" data-position="fixed" data-theme="a">
     <h4>&nbsp;</h4>
   </div>
 </div>
 <div data-role="page" id="viewBookings">
-  <div data-role="header" data-position="fixed" data-theme="e"> <a href="#account" data-direction="reverse" data-icon="arrow-l">Back</a>
+  <div data-role="header" data-position="fixed" data-theme="a"> <a href="#account" data-direction="reverse" data-icon="arrow-l">Back</a>
     <h1>View Bookings</h1>
   </div>
   <div data-role="content" class="ui-content" role="main">
@@ -185,7 +151,7 @@ for ($i=0; $i < mysql_num_rows($SDsql); $i++)
 }
 ?>
     </table>
-    <br />
+    <br>
     <h4>Chauffeur Drive</h4>
     <table cellspacing="0" cellpadding="0" width="100%" border="1">
       <tr>
@@ -222,45 +188,45 @@ for ($j=0; $j < mysql_num_rows($CDsql); $j++)
 ?>
     </table>
   </div>
-  <div data-role="footer" data-position="fixed" class="nav-glyphish" data-theme="e">
+  <div data-role="footer" data-position="fixed" class="nav-glyphish" data-theme="a">
     <div data-role="navbar" class="nav-glyphish">
       <ul>
-        <li><a href="#" id="refresh" onclick="window.location.reload(); return false;" data-icon="custom">Refresh</a></li>
+        <li><a href="#" id="refresh" onClick="window.location.reload(); return false;" data-icon="custom">Refresh</a></li>
       </ul>
     </div>
   </div>
 </div>
 <div data-role="page" id="changePassword">
-  <div data-role="header" data-position="fixed" data-theme="e">
+  <div data-role="header" data-position="fixed" data-theme="a">
     <h1>Change Password</h1>
   </div>
   <div data-role="content" class="ui-content" role="main">
     <form id="changePassword_form" name="changePassword" action="" method="post">
       <div data-role="fieldcontain">
         <label for="currentPassword">Current Password</label>
-        <input type="password" name="currentPassword" id="currentPassword" />
+        <input type="password" name="currentPassword" id="currentPassword">
       </div>
       <div data-role="fieldcontain">
         <label for="newPassword">New Password</label>
-        <input type="password" name="newPassword" id="newPassword" />
+        <input type="password" name="newPassword" id="newPassword">
       </div>
       <div data-role="fieldcontain">
         <label for="confirmPassword">Confirm Password</label>
-        <input type="password" name="confirmPassword" id="confirmPassword" />
+        <input type="password" name="confirmPassword" id="confirmPassword">
       </div>
-      <br />
-      <br />
-      <span id="changePasswordMessageBox" style="display:none;"></span> <br />
-      <br />
-      <input name="Submit" type="submit" id="submit" data-theme="a" value="Submit" />
+      <br>
+      <br>
+      <span id="changePasswordMessageBox" style="display:none;"></span> <br>
+      <br>
+      <input name="Submit" type="submit" id="submit" data-theme="a" value="Submit">
     </form>
   </div>
-  <div data-role="footer" data-position="fixed" data-theme="e">
+  <div data-role="footer" data-position="fixed" data-theme="a">
     <h4>&nbsp;</h4>
   </div>
 </div>
 <div data-role="page" id="changeEmail">
-  <div data-role="header" data-position="fixed" data-theme="e">
+  <div data-role="header" data-position="fixed" data-theme="a">
     <h1>Change Email</h1>
   </div>
   <div data-role="content" class="ui-content" role="main">
@@ -268,32 +234,32 @@ for ($j=0; $j < mysql_num_rows($CDsql); $j++)
     <form id="changeEmail_form" name="changeEmail" action="" method="post">
       <div data-role="fieldcontain">
         <label for="currentEmail">Current Email</label>
-        <input type="text" name="currentEmail" id="currentEmail" value="<?php echo $myloggedEmail ?>" readonly="readonly" />
+        <input type="text" name="currentEmail" id="currentEmail" value="<?php echo $myloggedEmail; ?>" readonly="readonly">
       </div>
       <div data-role="fieldcontain">
         <label for="newEmail">New Email</label>
-        <input type="text" name="newEmail" id="newEmail" />
+        <input type="text" name="newEmail" id="newEmail">
       </div>
       <div data-role="fieldcontain">
         <label for="confirmEmail">Confirm Email</label>
-        <input type="text" name="confirmEmail" id="confirmEmail" />
+        <input type="text" name="confirmEmail" id="confirmEmail">
       </div>
-      <br />
-      <br />
-      <span id="messageBox" style="display:none;"></span> <br />
-      <br />
-      <input name="Submit" type="submit" id="submit" data-theme="a" value="Submit" />
+      <br>
+      <br>
+      <span id="messageBox" style="display:none;"></span> <br>
+      <br>
+      <input name="Submit" type="submit" id="submit" data-theme="a" value="Submit">
     </form>
   </div>
-  <div data-role="footer" data-position="fixed" data-theme="e">
+  <div data-role="footer" data-position="fixed" data-theme="a">
     <h4>&nbsp;</h4>
   </div>
 </div>
 <div data-role="page" id="booking">
-  <div data-role="header" data-position="inline" data-theme="e">
+  <div data-role="header" data-position="inline" data-theme="a">
     <h1>Booking</h1>
   </div>
-  <img src="appleIcon.png" width="90px" height="90px" style="margin:10px;" />
+  <img src="appleIcon.png" width="90px" height="90px" style="margin:10px;">
   <div data-role="content" class="ui-content" role="main">
     <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="a">
       <li data-role="list-divider">Booking Services</li>
@@ -301,12 +267,12 @@ for ($j=0; $j < mysql_num_rows($CDsql); $j++)
       <li><a href="#chauffeurDrive">Chauffeur Drive</a></li>
     </ul>
   </div>
-  <div data-role="footer" data-position="inline" data-theme="e">
+  <div data-role="footer" data-position="inline" data-theme="a">
     <h4>&nbsp;</h4>
   </div>
 </div>
 <div data-role="page" id="selfDrive">
-  <div data-role="header" data-position="fixed" data-theme="e">
+  <div data-role="header" data-position="fixed" data-theme="a">
     <h1>Self-Drive</h1>
   </div>
   <div data-role="content" class="ui-content" role="main">
@@ -347,16 +313,16 @@ for ($j=0; $j < mysql_num_rows($CDsql); $j++)
       </div>
       <div data-role="fieldcontain">
         <label for="SDstartdate">Start Date</label>
-        <input type="date" name="SDstartdate" id="SDstartdate" readonly="readonly" />
+        <input type="date" name="SDstartdate" id="SDstartdate" readonly="readonly">
       </div>
       <div data-role="fieldcontain">
         <label for="SDenddate">End Date</label>
-        <input type="date" name="SDenddate" id="SDenddate" readonly="readonly" />
+        <input type="date" name="SDenddate" id="SDenddate" readonly="readonly">
       </div>
       <div data-role="fieldcontain">
         <label for="SDpickuplocation">Pickup Location</label>
-        <input type="text" name="SDpickuplocation" id="SDpickuplocation" value="No 41 Pandan Road" disabled="disabled" />
-        <br />
+        <input type="text" name="SDpickuplocation" id="SDpickuplocation" value="No 41 Pandan Road" disabled="disabled">
+        <br>
         <span style="color:red;">* Please take note that this is a fixed pickup point for Self-Drive</span> </div>
       <div data-role="fieldcontain">
         <label for="SDpickuptime">Pickup Time</label>
@@ -369,19 +335,19 @@ for ($j=0; $j < mysql_num_rows($CDsql); $j++)
           <option value="6:00 PM">6:00 PM</option>
         </select>
       </div>
-      <br />
-      <br />
-      <span id="SDmessageBox" style="display:none;"></span> <br />
-      <br />
+      <br>
+      <br>
+      <span id="SDmessageBox" style="display:none;"></span> <br>
+      <br>
       <input name="Submit" id="submit" type="submit" data-theme="a" value="Book">
     </form>
   </div>
-  <div data-role="footer" data-position="fixed" data-theme="e">
+  <div data-role="footer" data-position="fixed" data-theme="a">
     <h4>&nbsp;</h4>
   </div>
 </div>
 <div data-role="page" id="chauffeurDrive">
-  <div data-role="header" data-position="fixed" data-theme="e">
+  <div data-role="header" data-position="fixed" data-theme="a">
     <h1>Chauffeur Drive</h1>
   </div>
   <div data-role="content" class="ui-content" role="main">
@@ -420,15 +386,15 @@ for ($j=0; $j < mysql_num_rows($CDsql); $j++)
       </div>
       <div data-role="fieldcontain">
         <label for="CDpickuplocation">Pickup Location</label>
-        <input type="text" name="CDpickuplocation" id="CDpickuplocation" />
+        <input type="text" name="CDpickuplocation" id="CDpickuplocation">
       </div>
       <div data-role="fieldcontain">
         <label for="CDdropofflocation">Dropoff Location</label>
-        <input type="text" name="CDdropofflocation" id="CDdropofflocation" />
+        <input type="text" name="CDdropofflocation" id="CDdropofflocation">
       </div>
       <div data-role="fieldcontain">
         <label for="CDpickupdate">Pickup Date</label>
-        <input type="date" name="CDpickupdate" id="CDpickupdate" readonly="readonly" />
+        <input type="date" name="CDpickupdate" id="CDpickupdate" readonly="readonly">
       </div>
       <div data-role="fieldcontain">
         <label for="CDpickuptime">Pickup Time</label>
@@ -441,16 +407,47 @@ for ($j=0; $j < mysql_num_rows($CDsql); $j++)
           <option value="6:00 PM">6:00 PM</option>
         </select>
       </div>
-      <br />
-      <br />
-      <span id="CDmessageBox" style="display:none;"></span> <br />
-      <br />
+      <br>
+      <br>
+      <span id="CDmessageBox" style="display:none;"></span> <br>
+      <br>
       <input name="Submit" type="submit" id="submit" data-theme="a" value="Book">
     </form>
   </div>
-  <div data-role="footer" data-position="fixed" data-theme="e">
+  <div data-role="footer" data-position="fixed" data-theme="a">
     <h4>&nbsp;</h4>
   </div>
 </div>
+<script src="js/changeEmail.js"></script> 
+<script src="js/changePassword.js"></script> 
+<script src="js/chauffeurDrive.js"></script> 
+<script src="js/login.js"></script> 
+<script src="js/register.js"></script> 
+<script src="js/register_action.js"></script> 
+<script src="js/resetPassword.js"></script> 
+<script src="js/selfDrive.js"></script> 
+<script src="js/viewCars.js"></script> 
+<script src="js/jQuery.ui.datepicker.js"></script> 
+<script src="js/jquery.ui.datepicker.mobile.js"></script> 
+<script>
+  $(document).bind( "mobileinit", function(){
+    $.mobile.page.prototype.options.degradeInputs.date = true;
+  });
+  
+$("a[data-role=tab]").each(function () {
+    var anchor = $(this);
+    anchor.bind("click", function () {
+        $.mobile.changePage(anchor.attr("href"), {
+            transition: "none",
+            changeHash: false
+        });
+        return false;
+    });
+});
+
+$("div[data-role=page]").bind("pagebeforeshow", function (e, data) {
+    $.mobile.silentScroll(0);
+});​
+</script>
 </body>
 </html>

@@ -1,46 +1,17 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-<link rel="apple-touch-icon" href="appleIcon.png" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>Homepage</title>
-<link rel="stylesheet" href="jquery.mobile-1.0rc1.min.css" type="text/css" />
-<link rel="stylesheet" href="style.css" type="text/css" />
-<script src="jquery-1.6.2.min.js"></script>
-<script src="jquery.mobile-1.0a4.1.min.js"></script>
-<script src="changeEmail.js"></script>
-<script src="changePassword.js"></script>
-<script src="chauffeurDrive.js"></script>
-<script src="login.js"></script>
-<script src="register.js"></script>
-<script src="register_action.js"></script>
-<script src="resetPassword.js"></script>
-<script src="selfDrive.js"></script>
-<script src="viewCars.js"></script>
-<script>
-$("a[data-role=tab]").each(function () {
-    var anchor = $(this);
-    anchor.bind("click", function () {
-        $.mobile.changePage(anchor.attr("href"), {
-            transition: "none",
-            changeHash: false
-        });
-        return false;
-    });
-});
-
-$("div[data-role=page]").bind("pagebeforeshow", function (e, data) {
-    $.mobile.silentScroll(0);
-});​
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-
 <body>
 <div data-role="page" id="index">
-  <div data-role="header" data-position="fixed" data-backbtn="false" data-theme="e">
+  <div data-role="header" data-position="fixed" data-backbtn="false" data-theme="a">
     <h1></h1>
   </div>
   <img src="appleIcon.png" width="90px" height="90px" style="margin:10px;">
@@ -55,16 +26,16 @@ $("div[data-role=page]").bind("pagebeforeshow", function (e, data) {
         <label for="loginPassword">Password</label>
         <input type="password" name="loginPassword" id="loginPassword">
       </div>
-      <br />
-      <br />
-      <a style="text-decoration:none;font-size:18px;" href="#register">Don't have an account?</a> <br />
-      <br />
-      <span id="loginMessageBox" style="display:none;"></span> <br />
-      <br />
+      <br>
+      <br>
+      <a style="text-decoration:none;font-size:18px;" href="#register">Don't have an account?</a> <br>
+      <br>
+      <span id="loginMessageBox" style="display:none;"></span> <br>
+      <br>
       <input name="Submit" type="submit" id="submit" data-theme="a" value="Login">
     </form>
   </div>
-  <div data-role="footer" data-position="fixed" class="nav-glyphish" data-theme="e">
+  <div data-role="footer" data-position="fixed" class="nav-glyphish" data-theme="a">
     <div data-role="navbar" class="nav-glyphish">
       <ul>
         <li><a href="#about" id="aboutme" data-icon="custom">About</a></li>
@@ -75,7 +46,7 @@ $("div[data-role=page]").bind("pagebeforeshow", function (e, data) {
   </div>
 </div>
 <div data-role="page" id="register">
-  <div data-role="header" data-position="fixed" data-theme="e">
+  <div data-role="header" data-position="fixed" data-theme="a">
     <h1>Registration</h1>
   </div>
   <div data-role="content" class="ui-content" role="main">
@@ -104,14 +75,14 @@ $("div[data-role=page]").bind("pagebeforeshow", function (e, data) {
         <label for="registerPhonenum">Phone No.</label>
         <input type="tel" name="registerPhonenum" id="registerPhonenum">
       </div>
-      <br />
-      <br />
-      <span id="registerMessageBox" style="display:none;"></span> <br />
-      <br />
+      <br>
+      <br>
+      <span id="registerMessageBox" style="display:none;"></span> <br>
+      <br>
       <input name="Submit" type="submit" id="submit" data-theme="a" value="Register">
     </form>
   </div>
-  <div data-role="footer" data-position="fixed" class="nav-glyphish" data-theme="e">
+  <div data-role="footer" data-position="fixed" class="nav-glyphish" data-theme="a">
     <div data-role="navbar" class="nav-glyphish">
       <ul>
         <li> <a href="#index" id="login" data-icon="custom">Login</a> </li>
@@ -120,27 +91,27 @@ $("div[data-role=page]").bind("pagebeforeshow", function (e, data) {
   </div>
 </div>
 <div data-role="page" id="about">
-  <div data-role="header" data-position="inline" data-theme="e">
+  <div data-role="header" data-position="inline" data-theme="a">
     <h1>About Us</h1>
   </div>
-  <img src="appleIcon.png" width="90px" height="90px" style="margin:10px;" />
+  <img src="appleIcon.png" width="90px" height="90px" style="margin:10px;">
   <div data-role="content" class="ui-content" role="main">
     <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="a">
       <li style="margin-bottom:10px;" data-role="list-divider">BACKGROUND INFORMATION</li>
       <blockquote><b>C & P Rent-A-Car (Pte) Ltd (CPRAC)</b> is incorporated in Singapore in 1979. 
         It is a wholly owned subsidiary of <b>C & P Holdings Pte Ltd (CPH)</b>, a company incorporated in Singapore since 1970.
         CPH core business is in warehousing, logistics and infrastructure. 
-        CPH owns 49% of SGX Mainboard listed CWT Ltd, who is an integrated logistics provider. <br />
-        <br />
+        CPH owns 49% of SGX Mainboard listed CWT Ltd, who is an integrated logistics provider. <br>
+        <br>
       </blockquote>
     </ul>
   </div>
-  <div data-role="footer" data-position="inline" data-theme="e">
+  <div data-role="footer" data-position="inline" data-theme="a">
     <h4>&nbsp;</h4>
   </div>
 </div>
 <div data-role="page" id="contact">
-  <div data-role="header" data-position="fixed" data-theme="e">
+  <div data-role="header" data-position="fixed" data-theme="a">
     <h1>Contact Us</h1>
   </div>
   <div data-role="content" class="ui-content" role="main">
@@ -173,12 +144,12 @@ $("div[data-role=page]").bind("pagebeforeshow", function (e, data) {
       </li>
     </ul>
   </div>
-  <div data-role="footer" data-position="fixed" data-theme="e">
+  <div data-role="footer" data-position="fixed" data-theme="a">
     <h4>&nbsp;</h4>
   </div>
 </div>
 <div data-role="page" id="viewCars">
-  <div data-role="header" data-position="fixed" data-theme="e">
+  <div data-role="header" data-position="fixed" data-theme="a">
     <h1>View Fleets</h1>
   </div>
   <div data-role="content" class="ui-content" role="main">
@@ -186,9 +157,34 @@ $("div[data-role=page]").bind("pagebeforeshow", function (e, data) {
       <li data-role="list-divider">Fleets</li>
     </ul>
   </div>
-  <div data-role="footer" data-position="fixed" data-theme="e">
+  <div data-role="footer" data-position="fixed" data-theme="a">
     <h4>&nbsp;</h4>
   </div>
 </div>
+<script src="js/changeEmail.js"></script> 
+<script src="js/changePassword.js"></script> 
+<script src="js/chauffeurDrive.js"></script> 
+<script src="js/login.js"></script> 
+<script src="js/register.js"></script> 
+<script src="js/register_action.js"></script> 
+<script src="js/resetPassword.js"></script> 
+<script src="js/selfDrive.js"></script> 
+<script src="js/viewCars.js"></script> 
+<script>
+$("a[data-role=tab]").each(function () {
+    var anchor = $(this);
+    anchor.bind("click", function () {
+        $.mobile.changePage(anchor.attr("href"), {
+            transition: "none",
+            changeHash: false
+        });
+        return false;
+    });
+});
+
+$("div[data-role=page]").bind("pagebeforeshow", function (e, data) {
+    $.mobile.silentScroll(0);
+});​
+</script>
 </body>
 </html>
