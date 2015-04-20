@@ -11,13 +11,11 @@
 </head>
 <body>
 <div data-role="page" id="index">
-  <div data-role="header" data-position="fixed" data-backbtn="false" data-theme="a">
-    <h1></h1>
-  </div>
-  <img src="appleIcon.png" width="90px" height="90px" style="margin:10px;">
-  <h4 style="text-align:center">Welcome to C&P Rent A Car Booking System</h4>
+  <div data-role="header" data-position="fixed" data-backbtn="false" data-theme="a"> </div>
+  <img src="appleIcon.png" width="90" height="90" alt="favicon" style="margin:10px;">
+  <h4 style="text-align:center">Welcome to C&amp;P Rent A Car Booking System</h4>
   <div data-role="content" class="ui-content" role="main">
-    <form id="login_form" name="login_form" action="" method="post">
+    <form id="login_form" name="login_form" method="post">
       <div data-role="fieldcontain">
         <label for="loginEmail">Email</label>
         <input type="text" name="loginEmail" id="loginEmail">
@@ -32,7 +30,7 @@
       <br>
       <span id="loginMessageBox" style="display:none;"></span> <br>
       <br>
-      <input name="Submit" type="submit" id="submit" data-theme="a" value="Login">
+      <input name="Submit" type="submit" data-theme="a" value="Login">
     </form>
   </div>
   <div data-role="footer" data-position="fixed" class="nav-glyphish" data-theme="a">
@@ -50,7 +48,7 @@
     <h1>Registration</h1>
   </div>
   <div data-role="content" class="ui-content" role="main">
-    <form id="register_form" name="register" action="" method="post">
+    <form id="register_form" name="register" method="post">
       <div data-role="fieldcontain">
         <label for="registerName">Name</label>
         <input type="text" name="registerName" id="registerName">
@@ -79,7 +77,7 @@
       <br>
       <span id="registerMessageBox" style="display:none;"></span> <br>
       <br>
-      <input name="Submit" type="submit" id="submit" data-theme="a" value="Register">
+      <input name="Submit" type="submit" data-theme="a" value="Register">
     </form>
   </div>
   <div data-role="footer" data-position="fixed" class="nav-glyphish" data-theme="a">
@@ -94,17 +92,15 @@
   <div data-role="header" data-position="inline" data-theme="a">
     <h1>About Us</h1>
   </div>
-  <img src="appleIcon.png" width="90px" height="90px" style="margin:10px;">
+  <img src="appleIcon.png" width="90" height="90" alt="favicon" style="margin:10px;">
   <div data-role="content" class="ui-content" role="main">
-    <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="a">
-      <li style="margin-bottom:10px;" data-role="list-divider">BACKGROUND INFORMATION</li>
-      <blockquote><b>C & P Rent-A-Car (Pte) Ltd (CPRAC)</b> is incorporated in Singapore in 1979. 
-        It is a wholly owned subsidiary of <b>C & P Holdings Pte Ltd (CPH)</b>, a company incorporated in Singapore since 1970.
-        CPH core business is in warehousing, logistics and infrastructure. 
-        CPH owns 49% of SGX Mainboard listed CWT Ltd, who is an integrated logistics provider. <br>
-        <br>
-      </blockquote>
-    </ul>
+    <h1 data-role="list-divider">BACKGROUND INFORMATION</h1>
+    <blockquote><b>C & P Rent-A-Car (Pte) Ltd (CPRAC)</b> is incorporated in Singapore in 1979. 
+      It is a wholly owned subsidiary of <b>C & P Holdings Pte Ltd (CPH)</b>, a company incorporated in Singapore since 1970.
+      CPH core business is in warehousing, logistics and infrastructure. 
+      CPH owns 49% of SGX Mainboard listed CWT Ltd, who is an integrated logistics provider. <br>
+      <br>
+    </blockquote>
   </div>
   <div data-role="footer" data-position="inline" data-theme="a">
     <h4>&nbsp;</h4>
@@ -122,25 +118,25 @@
           <br>
           Name: Joanne CHONG <br>
           Email: <a href="mailto:joanne@candp.com">joanne@candp.com</a> <br>
-          Tel: <a href="tel:6349 5284">6349 5284</a> </p>
+          Tel: <a href="tel:63495284">6349 5284</a> </p>
       </li>
       <li>
         <h1>CEO</h1>
         <p> Name: LOI Win Yen <br>
           Email: <a href="mailto:winyen@candp.com">winyen@candp.com</a> <br>
-          Tel: <a href="tel:9666 4666">9666 4666</a> </p>
+          Tel: <a href="tel:96664666">9666 4666</a> </p>
       </li>
       <li>
         <h1>Secretary</h1>
         <p> Name: Kitty LIM <br>
           Email: <a href="mailto:kittylim@candp.com">kittylim@candp.com</a> <br>
-          Tel: <a href="tel:6349 3839">6349 3839</a> </p>
+          Tel: <a href="tel:63493839">6349 3839</a> </p>
       </li>
       <li>
         <h1>Marketing Manager</h1>
         <p> Name: Jeanne PHUA <br>
           Email: <a href="mailto:jeanne.phua@candp.com">jeanne.phua@candp.com</a> <br>
-          Tel: <a href="tel:6349 5283">6349 5283</a> Mobile: <a href="tel:9116 6656">9116 6656</a> </p>
+          Tel: <a href="tel:63495283">6349 5283</a> Mobile: <a href="tel:91166656">9116 6656</a> </p>
       </li>
     </ul>
   </div>
