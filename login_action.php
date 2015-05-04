@@ -8,24 +8,16 @@ $sql		=	"SELECT * FROM usermaster WHERE email='".$myemail."'";
 $result		=	mysql_query($sql);
 $row		=	mysql_fetch_array($result);
 
-if (mysql_num_rows($result) > 0) 
-{
-	if ($myemail == "" && $password == "")
-	{
+if (mysql_num_rows($result) > 0)  {
+	if ($myemail == "" && $password == "") {
 		echo 'empty';
-	}
-	else if(strcmp($row['password'], $password) == 0) 
-	{
+	} else if(strcmp($row['password'], $password) == 0) {
 		echo "yes";
-		$_SESSION['loginEmail']	=	$myemail;
-	}
-	else
-	{
+		$_SESSION['loginEmail']	= $myemail;
+	} else {
 		echo 'incorrect';
 	}
-}
-else
-{
+} else {
 	echo "no";
 }
 ?>
